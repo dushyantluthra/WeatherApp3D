@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- <link rel="stylesheet" href="./style.css" /> -->
+		<title>3D Weather App</title>
+	</head>
+	<body>
+		<div id="search-box">
+			<input
+				type="search"
+				placeholder="Enter City Name"
+				id="location-input"
+				value="Gurugram"
+				required
+			/>
+		</div>
+		<section id="main-container">
+			<div id="left">
+				<div id="card">
+					<div id="location">
+						<div id="marker">
+							<i
+								class="fas fa-map-pin 2x"
+								style="
+									color: #d6d6d6;
+									margin-left: 0.5rem;
+									margin-right: 0.5rem;
+								"
+							></i>
+						</div>
+						<div id="city">Gurugram, IN</div>
+					</div>
+					<div id="overall">mostly sunny | visibility : 100%</div>
+					<div id="mid-sec">
+						<div id="current-temp">25 <sup id="sup1">°C</sup></div>
+						<div id="image">
+							<!-- <i
+								class="fas fa-sun"
+								style="
+									width: 100%;
+									height: 100%;
+									font-size: 6.2rem;
+									text-align: center;
+									color: rgb(238, 238, 92);
+								"
+							></i> -->
+						</div>
+					</div>
+					<div id="min-max">
+						<div id="min-temp">Min Temp: 18 <sup id="sup2">°C</sup></div>
+						<div id="max-temp">Max Temp: 30 <sup id="sup2">°C</sup></div>
+					</div>
+					<div id="overall2">wind speed: 4.1 Km/hr | Humidity : 81</div>
+				</div>
+			</div>
+			<div id="right"><canvas id="three"></canvas></div>
+		</section>
+	</body>
+</html>
