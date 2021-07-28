@@ -10,8 +10,29 @@ html {
 }
 
 body{
-    background: #432565;
+    background: linear-gradient(325deg, #767979, #432565, #000000, #59a379);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 6s ease infinite;
+    -o-animation: AnimationName 6s ease infinite;
+    animation: AnimationName 6s ease infinite;
     
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 17%}
+    100%{background-position:0% 84%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 17%}
+    100%{background-position:0% 84%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 17%}
+    100%{background-position:0% 84%}
 }
 
 
