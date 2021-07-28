@@ -40,7 +40,7 @@ const sizes = {
 const canvas = document.getElementById('three');
  
 			async function getData(params) {
-				const url = `http://api.openweathermap.org/data/2.5/weather?q=${params}&appid=6e9b250106dd23d87878f8f7092dfb25`;
+				const url = `http://api.openweathermap.org/data/2.5/weather?q=${params}&appid={youropenweatherapikey}`;
 				const res = await fetch(url);
 				const json = await res.json();
 				const { coord, main, name, sys, weather, wind, visibility } = json;
